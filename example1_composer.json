@@ -1,0 +1,24 @@
+{
+    "name": "vendor_name/package_name",
+    "description": "description_text",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+      {
+        "name": "Michail Afonin",
+        "email": "email@example.com"
+      }
+    ],
+    "require": {
+        "robmorgan/phinx": "*"
+    },
+    "autoload": {
+        "PSR-4": {
+          "folder\\": ""
+        }
+    }
+}
+
+//Для автозагрузки применяется стандарт PSR-4, который говорит о том, что 
+//названия классов должны быть помещены в пространство имен вида:
+\<ПространствоИмен>(\<ПространствоИмен>)*\<ИмяКласса>
